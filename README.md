@@ -3,6 +3,7 @@ This project represents a significant leap forward in agricultural monitoring te
 
 
 **Background**
+
 In agricultural management, arthropods play a pivotal role in the vitality and productivity of ecosystems. Monitoring these species is essential for sustainable agricultural practices and effective pest control. Traditionally, sticky cards are used to trap various arthropod species, but counting and identifying these species manually is laborious and prone to error.
 
 
@@ -23,6 +24,7 @@ The objective of this project was to develop an automated application that could
 RoboFlow was chosen for its adeptness in handling the complexities of our dataset, providing an all-in-one solution for image preprocessing, annotation, and management. This platform streamlined our workflow, ensuring uniformity and precision in our dataset.
 
 **Steps:**
+
   1. Image Acquisition & Conversion: High-resolution images (3000x3000 pixels) were resized to 640x640 pixels for the YOLOv8 neural network.
   2. Image Preprocessing: Cropping, normalization, and augmentation techniques were used to enhance image quality.
   3. Image Labeling & Dataset Insights: Manual annotation of arthropod instances using RoboFlow's interface.
@@ -34,19 +36,24 @@ RoboFlow was chosen for its adeptness in handling the complexities of our datase
 **YOLOv8 Variants**
 
 **YOLOv8x:**
+
   - High precision, suitable for detailed analysis but computationally intensive.
   - Best for accuracy, slower inference time.
 **YOLOv8n:**
+
   - Fastest model, lower precision, ideal for real-time applications.
   - Best for speed, lower accuracy.
 **YOLOv8-P2:**
+
   - Balanced precision and recall, suitable for detecting small objects.
   - Middle ground between precision and speed.
 **Integration and Optimization:**
+
   - Hybrid approach combining YOLOv8n and YOLOv8-P2 for enhanced versatility and performance.
 
     
 **Comprehensive Workflow Integration**
+
   1. Training and Model Configuration (SAHI.ipynb):
       - Configuring and training YOLOv8 models.
       - Validating models against a separate test set.
