@@ -39,14 +39,17 @@ RoboFlow was chosen for its adeptness in handling the complexities of our datase
 
   - High precision, suitable for detailed analysis but computationally intensive.
   - Best for accuracy, slower inference time.
+    
 **YOLOv8n:**
 
   - Fastest model, lower precision, ideal for real-time applications.
   - Best for speed, lower accuracy.
+    
 **YOLOv8-P2:**
 
   - Balanced precision and recall, suitable for detecting small objects.
   - Middle ground between precision and speed.
+    
 **Integration and Optimization:**
 
   - Hybrid approach combining YOLOv8n and YOLOv8-P2 for enhanced versatility and performance.
@@ -54,13 +57,13 @@ RoboFlow was chosen for its adeptness in handling the complexities of our datase
     
 **Comprehensive Workflow Integration**
 
-  1. Training and Model Configuration (SAHI.ipynb):
+  1. Training and Model Configuration Jupyter notebook:
       - Configuring and training YOLOv8 models.
       - Validating models against a separate test set.
-  2. Detection and Counting Script (app_NMS_TRY.py):
+  2. Detection and Counting python Script:
       - Detecting arthropods on new images.
       - Logging detailed detection results.
-  3. Application Deployment (streamlit.ipynb):
+  3. Application Deployment:
       - User-friendly GUI for uploading images and receiving detection results in real-time.
 
 **Outcomes and Insights**
